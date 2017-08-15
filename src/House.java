@@ -80,8 +80,6 @@ public class House {
 //        jiqiren.setLocalY(INITY);
         int count = 0;
 
-        int x = 11111111;
-
 
         String[][] ground = new String[GROUNDSIZEX][GROUNDSIZEY];
         ground[INITX][INITY] = "*";
