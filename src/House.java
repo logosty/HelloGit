@@ -1,19 +1,13 @@
-import java.util.Date;
 
-/**
- * @Author: logosty
- * @Description:
- * @Date: Created in 11:18 2017/8/15
- */
 public class House {
-    public static final int INITX = 50;
-    public static final int INITY = 50;
-    public static final int GROUNDSIZEX = 100;
-    public static final int GROUNDSIZEY = 100;
-    public static final int TIMES = 12;
+    private static final int INITX = 50;
+    private static final int INITY = 50;
+    private static final int GROUNDSIZEX = 100;
+    private static final int GROUNDSIZEY = 100;
+    private static final int TIMES = 12;
 
 
-    public int turn(int localX, int localY, String[][] ground, int times, int code) {
+    private int turn(int localX, int localY, String[][] ground, int times, int code) {
         if (times == 0) {
             return 1;
         }
@@ -31,6 +25,7 @@ public class House {
             System.out.println(times + "!!!}");
 //            jiqiren.left();
             ground[localX + 1][localY] = null;
+            int aaaaaaaaaa = 10000;
         }
 
         if (localX - 1 > 0 && ground[localX - 1][localY] == null && code != 1) {
@@ -78,7 +73,7 @@ public class House {
 //        Jiqiren jiqiren = new Jiqiren();
 //        jiqiren.setLocalX(INITX);
 //        jiqiren.setLocalY(INITY);
-        int count = 0;
+        int count;
 
 
         String[][] ground = new String[GROUNDSIZEX][GROUNDSIZEY];
